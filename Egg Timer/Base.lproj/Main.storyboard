@@ -73,22 +73,41 @@
                                 <color key="barTintColor" red="0.21960784310000001" green="0.75686274509999996" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="210" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPE-eu-bW7">
-                                <rect key="frame" x="86" y="295" width="202" height="77"/>
+                                <rect key="frame" x="86.5" y="265" width="202" height="137"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="118" id="C90-yL-YYe"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="288" id="Veg-NJ-nRG"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="288" id="Wzf-x3-cU2"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="118" id="ceU-OG-n44"/>
                                     <constraint firstAttribute="width" constant="202" id="gdu-jo-eiW"/>
                                     <constraint firstAttribute="height" constant="77" id="qsk-CT-dfz"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="115"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="C90-yL-YYe"/>
+                                        <exclude reference="Veg-NJ-nRG"/>
+                                        <exclude reference="qsk-CT-dfz"/>
+                                    </mask>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.21960784310000001" green="0.75686274509999996" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="lPE-eu-bW7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2ae-fY-4ae"/>
+                            <constraint firstItem="lPE-eu-bW7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AxC-5e-0Fq"/>
                             <constraint firstItem="lPE-eu-bW7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GoF-pf-Wl0"/>
+                            <constraint firstItem="lPE-eu-bW7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JEI-3c-Bae"/>
+                            <constraint firstItem="lPE-eu-bW7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Peo-zq-T7Y"/>
                             <constraint firstItem="lPE-eu-bW7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YXU-F2-goh"/>
+                            <constraint firstItem="lPE-eu-bW7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="f3c-Gw-Z1w"/>
+                            <constraint firstItem="lPE-eu-bW7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gNS-P5-TIl"/>
+                            <constraint firstItem="lPE-eu-bW7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mM1-CV-mw5"/>
+                            <constraint firstItem="lPE-eu-bW7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uim-0w-ugi"/>
                             <constraint firstItem="lPE-eu-bW7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vKV-yh-Vet"/>
+                            <constraint firstItem="lPE-eu-bW7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="w9P-G4-QVS"/>
                         </constraints>
                     </view>
                     <connections>
@@ -97,7 +116,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="29.600000000000001" y="53.523238380809602"/>
+            <point key="canvasLocation" x="28.125" y="52.5"/>
         </scene>
     </scenes>
 </document>
