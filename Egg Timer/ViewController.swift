@@ -13,6 +13,7 @@ class ViewController: UIViewController {
 
     var timer = Timer()
     var time = 210
+    var timerActive = false
     
     func decreaseTimer() {
         
@@ -36,9 +37,13 @@ class ViewController: UIViewController {
     @IBOutlet var timerLabel: UILabel!
     @IBAction func pause(_ sender: Any) {
         timer.invalidate()
+        timerActive = false
     }
     @IBAction func play(_ sender: Any) {
+        if timerActive == false {
+            timerActive = true
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.decreaseTimer), userInfo: nil, repeats: true)
+        }
     }
     @IBAction func minusTen(_ sender: Any) {
         if time > 10 {
