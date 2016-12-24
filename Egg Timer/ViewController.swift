@@ -23,8 +23,9 @@ class ViewController: UIViewController {
         timerLabel.text = String(time)
         } else {
             timer.invalidate()
+            
             for _ in 1...5 {
-                AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
+                AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
                 sleep(1)
             }
         }
