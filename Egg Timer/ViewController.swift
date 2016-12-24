@@ -19,9 +19,19 @@ class ViewController: UIViewController {
     }
     
     
+    @IBOutlet var timerLabel: UILabel!
     @IBAction func pause(_ sender: Any) {
         timer.invalidate()
     }
+    @IBAction func play(_ sender: Any) {
+    }
+    @IBAction func minusTen(_ sender: Any) {
+    }
+    @IBAction func reset(_ sender: Any) {
+    }
+    @IBAction func plusTen(_ sender: Any) {
+    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

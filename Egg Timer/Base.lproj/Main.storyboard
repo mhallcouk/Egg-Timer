@@ -24,7 +24,7 @@
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vV0-zj-GzL">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="barTintColor" red="0.0" green="0.98039215690000003" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.2196078431372549" green="0.75686274509803919" blue="0.67450980392156867" alpha="1" colorSpace="calibratedRGB"/>
                                 <textAttributes key="titleTextAttributes">
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </textAttributes>
@@ -38,6 +38,9 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="play" id="RWX-8S-oLU">
                                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="play:" destination="BYZ-38-t0r" id="Yqf-0x-wSz"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -48,24 +51,53 @@
                                 <items>
                                     <barButtonItem title="-10" id="2gC-5C-FF8">
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="minusTen:" destination="BYZ-38-t0r" id="bm4-jg-NMw"/>
+                                        </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="5No-ss-tg8"/>
                                     <barButtonItem title="Reset" id="Meq-nW-HjY">
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="reset:" destination="BYZ-38-t0r" id="RDl-ws-U8u"/>
+                                        </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="3CQ-L9-eWo"/>
                                     <barButtonItem title="+10" id="MEv-TU-BWT">
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="plusTen:" destination="BYZ-38-t0r" id="F2l-gt-jr7"/>
+                                        </connections>
                                     </barButtonItem>
                                 </items>
-                                <color key="barTintColor" red="0.0" green="0.98039215690000003" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.21960784310000001" green="0.75686274509999996" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="210" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPE-eu-bW7">
+                                <rect key="frame" x="86" y="295" width="202" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="202" id="gdu-jo-eiW"/>
+                                    <constraint firstAttribute="height" constant="77" id="qsk-CT-dfz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.98039215690000003" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.21960784310000001" green="0.75686274509999996" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="lPE-eu-bW7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2ae-fY-4ae"/>
+                            <constraint firstItem="lPE-eu-bW7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GoF-pf-Wl0"/>
+                            <constraint firstItem="lPE-eu-bW7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YXU-F2-goh"/>
+                            <constraint firstItem="lPE-eu-bW7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vKV-yh-Vet"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="timerLabel" destination="lPE-eu-bW7" id="z1O-TK-Uwj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="29.600000000000001" y="53.523238380809602"/>
         </scene>
     </scenes>
 </document>
