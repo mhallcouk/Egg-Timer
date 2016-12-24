@@ -29,6 +29,7 @@ class ViewController: UIViewController {
                 AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
                 sleep(1)
             }
+            timerActive = false
         }
     
     }
