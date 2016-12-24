@@ -32,6 +32,7 @@ class ViewController: UIViewController {
         timer.invalidate()
     }
     @IBAction func play(_ sender: Any) {
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.decreaseTimer), userInfo: nil, repeats: true)
     }
     @IBAction func minusTen(_ sender: Any) {
     }
@@ -45,8 +46,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.decreaseTimer), userInfo: nil, repeats: true)
         
     }
 
