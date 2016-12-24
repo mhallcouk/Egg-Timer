@@ -18,7 +18,8 @@ class ViewController: UIViewController {
     
     }
     
-    @IBAction func startStop(_ sender: Any) {
+    
+    @IBAction func pause(_ sender: Any) {
         timer.invalidate()
     }
     
