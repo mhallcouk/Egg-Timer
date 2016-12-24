@@ -11,10 +11,18 @@ import UIKit
 class ViewController: UIViewController {
 
     var timer = Timer()
+    var time = 210
     
-    func processTimer() {
+    func decreaseTimer() {
         
-        print("A second has passed")
+        if time > 0 {
+        
+        time -= 1
+        
+        timerLabel.text = String(time)
+        } else {
+            timer.invalidate()
+        }
     
     }
     
@@ -38,7 +46,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
 
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.processTimer), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.decreaseTimer), userInfo: nil, repeats: true)
         
     }
 
