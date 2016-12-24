@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var timer = Timer()
     
     func processTimer() {
         
@@ -17,13 +18,16 @@ class ViewController: UIViewController {
     
     }
     
+    @IBAction func startStop(_ sender: Any) {
+        timer.invalidate()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        var timer = Timer()
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: Selector("processTimer"), userInfo: nil, repeats: true)
+
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.processTimer), userInfo: nil, repeats: true)
         
     }
 
